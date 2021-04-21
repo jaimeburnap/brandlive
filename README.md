@@ -12,8 +12,8 @@ CSS is done using [Tailwind](https://tailwindcss.com/), [PostCSS](https://postcs
 * Clone repository
 * `yarn install`
 * `yarn start`
-* Visit [http://localhost:3000] if your browser doesn't automatically
-* Visit [http://localhost:3000] in another browser
+* Visit [http://localhost:3000](http://localhost:3000) if your browser doesn't automatically
+* Visit [http://localhost:3000](http://localhost:3000) in another browser
 
 
 
