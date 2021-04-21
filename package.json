@@ -1,0 +1,54 @@
+{
+	"name": "brandlive",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"luxon": "^1.26.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-hook-form": "^6.0.0",
+		"react-scripts": "4.0.3",
+		"socket.io-client": "2.2.0"
+	},
+	"scripts": {
+		"start": "npm-run-all build:tailwind --parallel watch:tailwind start:react",
+		"start:react": "react-scripts start",
+		"build": "npm-run-all build:tailwind build:react",
+		"build:react": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"build:tailwind": "postcss src/App.scss -o src/output.css",
+		"watch:tailwind": "postcss src/App.scss -o src/output.css -w"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss7-compat": "^2.1.0",
+		"autoprefixer": "^9",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^7",
+		"postcss-cli": "^7",
+		"postcss-import": "^7",
+		"postcss-nesting": "^7",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
+	}
+}
